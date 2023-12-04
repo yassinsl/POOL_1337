@@ -7,6 +7,7 @@ void ft_putchar(char c)
 int main (void)
 {
 ft_putnbr(10000);
+ ft_putchar('\n');
 }
 void ft_putnbr(int nb)
 {

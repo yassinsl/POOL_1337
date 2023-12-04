@@ -39,4 +39,5 @@ void ft_print_comb2(void)
         }
         i++;
     }
+    write(1, "\n",1);
 }

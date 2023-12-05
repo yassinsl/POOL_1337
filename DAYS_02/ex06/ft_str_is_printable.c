@@ -22,8 +22,11 @@ void main ()
 {
     char a[] =" |}{!^%*()}";
     char b[] ="€‰£";
+    
     int a1 = ft_str_is_printable(a);
     int b1 = ft_str_is_printable(b);
+    int empty = ft_str_is_printable(0);
     printf("%d\n", a1);
     printf("%d\n", b1);
+    printf("%d\n", empty);
 }

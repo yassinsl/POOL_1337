@@ -18,7 +18,7 @@ int ft_str_is_alpha(char *str)
 }
 void main(void)
 {
-     char a[110] = "hellowor4ld";
+     char a[110] = "";
     char b[100] = "hellowoorld";
     int c,d;
     c =  ft_str_is_alpha(a);

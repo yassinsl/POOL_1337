@@ -26,7 +26,7 @@ char *ft_strcapitalize(char *str)
 }
 void main()
 {
-     char a[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+     char a[] = "+alut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
      char *c = ft_strcapitalize(a);
      printf("%s\n", c);
 

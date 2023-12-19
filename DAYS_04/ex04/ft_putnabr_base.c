@@ -5,12 +5,12 @@ void	ft_putchar(char c)
 
 }
 
-int		error(char *str)
+int	error(char *str)
 {
 	int	i;
 	int	j;
 
-	if (!str)
+	if (str == NULL)
 		return (0);
 	i = 0;
 	while (str[i])
@@ -22,12 +22,13 @@ int		error(char *str)
 		{
 			if (str[i] == str[j])
 				return (0);
-			++j;
+			j++;
 		}
-		++i;
+		i++;
 	}
 	if (i < 2)
 		return (0);
+	else
 	return (i);
 }
 
@@ -51,16 +52,19 @@ void	ft_putnbr_base(int nb, char *str)
 {
 	unsigned int	str_length;
 
-	str_length = 2;
+	str_length = 0;
 	str_length = error(str);
 	if (!str_length)
 		return ;
+	if(nb >= 0)
 	display(nb, str, str_length);
+	else if(nb < 0)
+
 }
 int main ()
 {
-	int a =100;
-	char b[] ="0123456789ABCDE";
+	int a =-10;
+	char b[] ="01";
 	ft_putnbr_base(a,b);
 
 }
